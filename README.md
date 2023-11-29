@@ -1,28 +1,32 @@
 # Practice code challenge The Blogg
 
-## Setup the server
-
-```
-json-server --watch db.json
-```
-
-### Endpoints for the deliverables
-
-GET / POST / PATCH / DELETE
-
-```
-http://localhost:3000/blogs
-http://localhost:3000/blogs/:id
-```
-
-## Setup the react-app
-
-Run
+## Setup the project
 
 ```
 npm install
 npm start
 ```
+
+## Setup the server
+
+```
+npm run server
+```
+
+### Endpoints for the deliverables
+
+GET / POST
+
+```
+http://localhost:4000/blogs
+```
+
+PATCH / DELETE
+
+```
+http://localhost:4000/blogs/:id
+```
+
 
 ## Deliverables
 
