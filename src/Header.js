@@ -1,6 +1,12 @@
 import React from "react";
 
-function Header() {
+function Header({ setSearch }) {
+  
+  function handleSearch(e) {
+    setSearch(e.target.value);
+    console.log(e.target.value)
+  }
+  
   return (
     <div>
       <header className="logo">
@@ -19,6 +25,7 @@ function Header() {
           }}
           placeholder="Search an article or the author"
           type="text"
+          onChange={handleSearch}
         ></input>
       </header>
     </div>
